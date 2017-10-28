@@ -15,7 +15,9 @@ int APIENTRY _tWinMain(HINSTANCE hInstance,
     // create the application instance
     AppDelegate app;
     CCEGLView* eglView = CCEGLView::sharedOpenGLView();
-    eglView->setViewName("fishingjoy");
-    eglView->setFrameSize(480, 320);
+    eglView->setViewName("FishingJoy");
+    eglView->setFrameSize(2048,1536);
+	//界面的放大系数
+	eglView->setFrameZoomFactor(0.4f);
     return CCApplication::sharedApplication()->run();
 }
